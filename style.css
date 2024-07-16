@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: #222;
+}
+h2{
+    font-size: 45px;
+    line-height: 50px;
+    color: #222;
+}
+h4{
+  font-size: 20px;
+  color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0;
+
+}
+
+body{
+ width: 100%;
+ 
+}
+header{
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(245, 181, 192);
+   
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0 30px;
+    text-decoration: blanchedalmond;
+    position: relative;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+    color: rgb(26, 2, 2);
+   transition: 0.3s ease;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+   
+    color: rgb(250, 17, 17);
+    font-size: 1.2rem;
+    
+  }
+  nav ul li a.active::after,
+  nav ul li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:rgb(250, 17, 17) ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+
+
+  .left .indyaa{
+    width: 65px;
+}
+.right .bag{
+    width: 30px;
+    
+}
+
+/*home*/
+.firstsection{
+  background-color: rgb(250, 204, 212);
+  background-image: url("images/home/homebag.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: top 30% right 5%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+.firstsection h4{
+  padding-bottom: 10px;
+}
+.firstsection h1{
+  color: #088178;
+}
+.firstsection .btn1{
+   background-image: url("images/button/shopbtn.png");
+   height: 35vh;
+  
+   background-size: cover;
+   background-color: transparent;
+   color: #088178;
+   border: 0;
+   padding: 15px 80px 25px 70px;
+   background-repeat: no-repeat;
+   cursor: pointer;
+   font-weight: 900;
+   font-size: 15px;
+   margin-top: -70px;
+}
+.secondsection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 60vh;
+  background-color: white;
+  padding: 40px 50px
+}
+.secondsection .f1-del{
+  width: 190px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
+    border: 2px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+.secondsection .f1-del:hover{
+  box-shadow: 5px 5px 64px rgba(70,62,221,0.1);
+}
+.secondsection .f1-del img{
+  height: 20vh;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.secondsection .f1-del h6{
+  display: inline-block;
+padding: 8px 8px 9px 8px;
+line-height: 1px;
+border-radius: 4px;
+color: #088178;
+background-color:  rgb(250, 204, 212);
+}
+.secondsection .f1-del:nth-child(2) h6{
+  background-color: #cdebbc;
+}
+.secondsection .f1-del:nth-child(3) h6{
+  background-color: #f0fd33;
+}
+.secondsection .f1-del:nth-child(4) h6{
+  background-color: #f7d565;
+}
+.secondsection .f1-del:nth-child(5) h6{
+  background-color: #76f2f7;
+}
+.secondsection .f1-del:nth-child(6) h6{
+  background-color: #93b3ee;
+}
+
+.thirdsection{
+  padding: 50px 80px;
+  text-align: center;
+  background-color: rgb(252, 238, 238);
+}
+.thirdsection .products{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  
+}
+.thirdsection .prod{
+  width: 15%;
+  min-width: 180px;
+  padding: 10px 12px;
+  border: 2px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+position: relative;
+
+}
+.thirdsection .prod:hover{
+  box-shadow: 30px 30px 40px rgba(0,0,0,0.06);
+
+}
+.thirdsection .prod img{
+  width: 100%;
+border-radius: 20px;
+background: antiquewhite;
+}
+.thirdsection .prod .brand-name{
+  text-align: start;
+  padding: 10px 0;
+}
+.thirdsection .prod .brand-name span{
+  font-size: 12px;
+  color: #465b52;
+}
+.thirdsection .prod .brand-name h5{
+  padding: 5px 0;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.thirdsection .prod .brand-name i{
+  font-size: 12px;
+  color: #f1c32c;
+}
+.thirdsection .prod .brand-name h4{
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 700;
+  color:#088178;
+}
+.thirdsection .prod .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  background-color: #bcf3c4; 
+  color:#088178 ;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 10PX;
+  right: 10px;
+  
+}
+.forthsection{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/background/sec-4back.png");
+  width: 100%0;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+.forthsection h5{
+  color: white;
+  font-size: 20px;
+}
+.forthsection h2{
+  color:white;
+  font-size: 50px;
+  padding: 10px 0;
+
+}
+.forthsection h2 span{
+  color: rgb(17, 230, 10);
+}
+.forthsection .btn2{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+.forthsection .btn2:hover{
+  background-color: #088178;
+  color: white;
+}
+.fifthsection {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.fifthsection .banner1{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("images/background/sec5-back.jpg");
+  min-width:580px ;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.fifthsection .banner1 h5{
+  color: rgb(246, 252, 252);
+  font-size: 20px;
+  font-weight: 300;
+}
+.fifthsection .banner1 h4{
+  color: rgb(253, 255, 255);
+  font-size: 28px;
+  font-weight: 700;
+}
+.fifthsection .banner1 span{
+  font-weight: 700;
+    font-size: 12px;
+color: rgb(250, 248, 248);
+padding-top: 8px 0;
+padding-bottom: 15px;
+}
+.fifthsection .btn3-5{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: black;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  transition: 0.2s;
+}
+.fifthsection .banner1:hover .btn3-5{
+
+  background-color: #088178;
+  color: white;
+}
+.fifthsection .banner2{
+  background-image: url("images/background/sec5-clothes.jpg");
+}
+.sixsection{
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.sixsection .banner1{
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("images/background/sec-6back.jpg");
+  min-width:30%;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.sixsection .banner2{
+background-image: url("images/background/sec6-back1.jpg");
+}
+.sixsection .banner3{
+background-image: url("images/background/sec6-back2.jpg");
+}
+.sixsection .banner1 h2{
+  color: white;
+  font-weight: 800;
+  font-size: 22px;
+}
+.sixsection .banner1 h2{
+  color: rgb(231, 16, 27);
+  font-weight: 900;
+  font-size: 20px;
+}
+.sixsection .banner1 span{
+      font-size: 15px;
+      font-weight: 600;
+}
+.sevensection{
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("images/background/sevenback.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  padding: 30px 20px ;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+.sevensection h4{
+  font-size: 20px;
+  font-weight: 700;
+ 
+}
+.sevensection p{
+   font-size: 15px;
+  font-weight: 700;
+ 
+}
+.sevensection p span{
+  color: red;
+}
+.sevensection input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.sevensection button{
+  background-color: #088178;
+  color: white;
+  white-space: nowrap;
+   border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.sevensection .news-sign{
+  display: flex;
+  width: 40%;
+}
+
+.foot{
+  padding: 40px 80px;
+}
+
+.foot .col img{
+  width: 65px; 
+}
+.foot{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.foot .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  
+}
+.foot .col a{
+  text-decoration: none;
+}
+
+
+
+/*media query*/
+@media (max-width:799px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right:-300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.02);
+    padding: 80px 0 0 10px;
+}
+nav .right ul li{
+  margin-bottom:  34px;
+}
+#mobile {
+  display: none;
+  align-items: center;
+}
+#mobile i{
+  color: black;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+#mobile .bag{
+  width: 20px;
+  padding-top: 3px;
+}
+#mobile {
+  display: flex;
+  align-items: center;
+}
+
+
+}
+
+#mobile .bag{
+  display: none;
+  width: 20px;
+  padding-top: 3px;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+
+/*shop page*/
+.page-header{
+background-image: url("images/background/shop-back.jpg");
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: bottom ;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+
+}
+.page-header h2,
+.page-header p{
+  color: white;
+  font-weight: 800;
+}
+
+
+#pageination{
+  padding: 50px;
+height: 10vh;
+text-align: center;
+
+}
+#pageination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight:600;
+}
+
+#pageination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
